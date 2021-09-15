@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+}
+#animalDiv {
+  text-align: center;
+}
+#cat {
+  width: 15%;
+  height: 40px;
+  background-color: hotpink;
+  font-weight: bold;
+  font-size: large;
+}
+#dog {
+  width: 15%;
+  height: 40px;
+  background-color: hotpink;
+  font-weight: bold;
+  font-size: large;
+}
+#rabbit {
+  width: 15%;
+  height: 40px;
+  background-color: hotpink;
+  font-weight: bold;
+  font-size: large;
+}
+#confirmDiv {
+  justify-content: center;
+}
+#confirm {
+  display: none;
+}
+#deathBox {
+  display: none;
+  text-align: center;
+}
+
+#actions {
+  display: none;
+}
+.image img {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.image {
+  /* background-image: url("/img/background.png"); */
+  /* background-repeat: no-repeat; */
+}
+.center {
+  text-align: center;
+}
