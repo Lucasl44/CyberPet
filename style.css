@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -10,49 +10,96 @@ button {
   font-family: "Raleway", sans-serif;
 }
 #animalDiv {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 #cat {
-  width: 15%;
-  height: 40px;
+  width: 25%;
+  height: 50px;
   background-color: hotpink;
   font-weight: bold;
   font-size: large;
+  margin-right: 10px;
 }
 #dog {
-  width: 15%;
-  height: 40px;
+  width: 25%;
+  height: 50px;
   background-color: hotpink;
   font-weight: bold;
   font-size: large;
+  margin-right: 10px;
 }
 #rabbit {
-  width: 15%;
-  height: 40px;
+  width: 25%;
+  height: 50px;
   background-color: hotpink;
   font-weight: bold;
   font-size: large;
 }
 #confirmDiv {
+  display: flex;
   margin-top: 30px;
-  text-align: center;
-  min-width: 100vw;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 #confirm {
   display: none;
   background-color: hotpink;
-  height: 40px;
-  width: 15%;
+  height: 50px;
+  width: 30%;
   font-weight: bold;
   font-size: large;
 }
 #deathBox {
   display: none;
+  width: 100%;
+  text-align: center;
 }
-
+#divCenter {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+#nameDead {
+  background-color: red;
+  width: 35%;
+  border-radius: 25%;
+  border: 2px solid black;
+  height: 50px;
+  font-weight: bold;
+  font-size: large;
+}
 #actions {
   display: none;
   text-align: center;
+}
+#display {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+#feed {
+  font-weight: bold;
+  font-size: large;
+  width: 15%;
+  background-color: saddlebrown;
+  border: 2px solid black;
+}
+#play {
+  font-weight: bold;
+  font-size: large;
+  width: 15%;
+  background-color: green;
+  border: 2px solid black;
+}
+#drink {
+  font-weight: bold;
+  font-size: large;
+  width: 15%;
+  background-color: slateblue;
+  border: 2px solid black;
 }
 .image img {
   max-width: 25%;
@@ -65,4 +112,8 @@ button {
 }
 .center {
   text-align: center;
+}
+.textEdit {
+  font-weight: bold;
+  font-size: large;
 }

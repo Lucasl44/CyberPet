@@ -12,14 +12,13 @@
 <body>
     <h1>Cyber Pet Game</h1>
     <div>
-        <p class="center">What would you like to raise?</p>
+        <p class="center textEdit">What would you like to raise?</p>
     </div>
     <div id="animalDiv">
-        <button id="cat" type="text">Cat</button>
-        <button id="dog" type="text">Dog</button>
+        <button id="cat" type="text">Cat</button>            <button id="dog" type="text">Dog</button>
         <button id="rabbit" type="text">Rabbit</button>
     </div>
-    <div id="confirmDiv">
+    <div class="center" id="confirmDiv">
         <button id="confirm" type="text">Confirm</button>
     </div>
     <div class="image center">
@@ -27,8 +26,8 @@
     </div>
     <div id="actions">
         <button id="feed" type="text">Feed</button>
-        <button id="play" type="text">Play</button>
         <button id="drink" type="text">Drink</button>
+        <button id="play" type="text">Play</button>
     </div>
     <div id="display">
         <p id="foodStatus"></p>
@@ -36,7 +35,9 @@
         <p id="boredomStatus"></p>
     </div>
     <div id="deathBox">
-        <p id="nameDead"></p>
+        <div id="divCenter">
+            <p id="nameDead"></p>
+        </div>
     </div>
     <script src="cyberPet.js"></script>
 </body>

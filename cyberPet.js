@@ -84,11 +84,13 @@ rabbit.addEventListener("click", () => {
     confirm1.style.display = "block";
     animalPic.src = "img/rabbit.png";
 });
-
-const HealthD = () => {
+const statsdown = () => {
     theAnimal.hungerDown();
     theAnimal.thirstDown();
     theAnimal.boredomDown();
+}
+const HealthD = () => {
+    statsdown();
     if (deathStatus){
         display1.style.display = "none";
         feed.style.display = "none";
@@ -99,10 +101,11 @@ const HealthD = () => {
         animalPic.style.transform = "rotate(180deg)";
         animalPic.style.filter = "grayscale(100%)";
     }
-    if (theAnimal.hunger == 0) {
+    if (theAnimal.hunger == 0 || theAnimal.thirst == 0 || theAnimal.boredom == 0) {
         deathStatus = true;
     }
-    else if (theAnimal.hunger > 1 && theAnimal.hunger <= 3) {
+
+    if (theAnimal.hunger > 1 && theAnimal.hunger <= 3) {
         foodStatus.textContent = `${theAnimal.name} is starving.`;
     }
     else if (theAnimal.hunger >= 4 && theAnimal.hunger <= 7) {
@@ -112,10 +115,8 @@ const HealthD = () => {
         foodStatus.textContent = `${theAnimal.name} is full.`;
     }
 
-    if (theAnimal.thirst == 0) {
-        deathStatus = true;
-    }
-    else if (theAnimal.thirst > 1 && theAnimal.thirst <= 3) {
+
+    if (theAnimal.thirst > 1 && theAnimal.thirst <= 3) {
         drinkStatus.textContent = `${theAnimal.name} is parched.`;
     }
     else if (theAnimal.thirst >= 4 && theAnimal.thirst <= 7) {
@@ -125,10 +126,7 @@ const HealthD = () => {
         drinkStatus.textContent = `${theAnimal.name} doesn't need water`;
     }
 
-    if (theAnimal.boredom == 0) {
-        deathStatus = true;
-    }
-    else if (theAnimal.boredom > 1 && theAnimal.boredom <= 3) {
+    if (theAnimal.boredom > 1 && theAnimal.boredom <= 3) {
         boredomStatus.textContent = `${theAnimal.name} is bored.`;
     }
     else if (theAnimal.boredom >= 4 && theAnimal.boredom <= 7) {
@@ -143,7 +141,7 @@ confirm1.addEventListener("click", () => {
     animalDiv.style.display = "none";
     confirm1.style.display = "none";
     actions.style.display = "block";
-    setInterval(HealthD, 5000);
+    setInterval(HealthD, 1000);
 });
 
 feed.addEventListener("click", () => {
