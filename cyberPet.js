@@ -141,7 +141,7 @@ confirm1.addEventListener("click", () => {
     animalDiv.style.display = "none";
     confirm1.style.display = "none";
     actions.style.display = "block";
-    setInterval(HealthD, 1000);
+    setInterval(HealthD, 5000);
 });
 
 feed.addEventListener("click", () => {
