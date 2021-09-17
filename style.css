@@ -34,18 +34,25 @@ button {
   font-size: large;
 }
 #confirmDiv {
-  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+  min-width: 100vw;
 }
 #confirm {
   display: none;
+  background-color: hotpink;
+  height: 40px;
+  width: 15%;
+  font-weight: bold;
+  font-size: large;
 }
 #deathBox {
   display: none;
-  text-align: center;
 }
 
 #actions {
   display: none;
+  text-align: center;
 }
 .image img {
   max-width: 25%;
